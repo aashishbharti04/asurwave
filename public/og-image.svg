@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AsurWave — AI-Powered Entertainment">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0a" />
+      <stop offset="1" stop-color="#050505" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#ff0033" stop-opacity="0.25" />
+      <stop offset="1" stop-color="#ff0033" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+
+  <g transform="translate(90, 250)">
+    <text font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="42" letter-spacing="6" fill="#ff0033">
+      AI-POWERED ENTERTAINMENT
+    </text>
+    <text y="120" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="130" letter-spacing="2" fill="#ffffff">
+      ASUR<tspan fill="#ff0033">WAVE</tspan>
+    </text>
+    <text y="185" font-family="'Segoe UI', Arial, sans-serif" font-weight="500" font-size="34" fill="#a1a1aa">
+      Music · Stories · Cinematics · Experiments
+    </text>
+  </g>
+
+  <path
+    d="M0 560c150 0 150-40 300-40s150 40 300 40 150-40 300-40 150 40 300 40v70H0z"
+    fill="#ff0033"
+    fill-opacity="0.12"
+  />
+</svg>

@@ -1,0 +1,18 @@
+{
+  "name": "AsurWave — AI-Powered Entertainment",
+  "short_name": "AsurWave",
+  "description": "AI-powered entertainment: music, stories, cinematic videos and experiments.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

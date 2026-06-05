@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+
+    <title>AsurWave | AI-Powered Entertainment — Music, Stories & Cinematics</title>
+    <meta
+      name="description"
+      content="AsurWave is the future of AI-powered entertainment: original music, visual stories, cinematic videos and creative experiments. Ride the wave of imagination."
+    />
+    <meta
+      name="keywords"
+      content="AsurWave, AI music, AI video, cinematic AI, AI art, visual storytelling, generative entertainment"
+    />
+    <meta name="author" content="AsurWave" />
+    <link rel="canonical" href="https://aashishbharti04.github.io/asurwave/" />
+
+    <!-- Avoid a flash of the wrong theme and enable scroll-reveal before paint. -->
+    <script>
+      (function () {
+        var root = document.documentElement;
+        root.classList.remove('no-js');
+        root.classList.add('js');
+        try {
+          var stored = localStorage.getItem('asurwave-theme');
+          var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+          var theme =
+            stored === 'light' || stored === 'dark' ? stored : prefersLight ? 'light' : 'dark';
+          if (theme === 'light') root.classList.add('light');
+          root.dataset.theme = theme;
+        } catch (e) {
+          root.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+
+    <!-- Icons & favicons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AsurWave" />
+    <meta property="og:url" content="https://aashishbharti04.github.io/asurwave/" />
+    <meta property="og:title" content="AsurWave | AI-Powered Entertainment" />
+    <meta
+      property="og:description"
+      content="Music. Stories. Cinematic videos. Experiments. Every wave brings something new."
+    />
+    <meta property="og:image" content="https://aashishbharti04.github.io/asurwave/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AsurWave | AI-Powered Entertainment" />
+    <meta
+      name="twitter:description"
+      content="Ride the wave of imagination with AI-generated music, stories, and cinematics."
+    />
+    <meta name="twitter:image" content="https://aashishbharti04.github.io/asurwave/og-image.svg" />
+
+    <!-- Performance: connect early to third-party origins. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (loaded without blocking render). -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </noscript>
+
+    <!-- Structured data for richer search results. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AsurWave",
+        "url": "https://aashishbharti04.github.io/asurwave/",
+        "logo": "https://aashishbharti04.github.io/asurwave/favicon.svg",
+        "description": "Creator of AI-powered entertainment including original music, cinematic videos, and visual narrations.",
+        "sameAs": [
+          "https://www.youtube.com/@AsurWave1012",
+          "https://in.linkedin.com/in/aashana1012",
+          "https://github.com/aashishbharti04",
+          "https://www.instagram.com/asurwave1012"
+        ],
+        "address": { "@type": "PostalAddress", "addressCountry": "India" }
+      }
+    </script>
+  </head>
+
+  <body class="overflow-x-hidden bg-canvas font-body text-content">
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="fixed z-50 w-full border-b border-asur-red/20 bg-canvas/85 backdrop-blur-md">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Primary">
+        <div class="flex h-20 items-center justify-between">
+          <a
+            href="#home"
+            class="group flex flex-shrink-0 items-center gap-3"
+            aria-label="AsurWave home"
+          >
+            <span class="relative">
+              <span
+                class="neon-border flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border-2 border-asur-red bg-black text-xs font-bold text-asur-red"
+              >
+                AW
+              </span>
+              <span
+                class="absolute inset-0 -z-10 rounded-full bg-asur-red opacity-40 blur-md transition-opacity group-hover:opacity-75"
+              ></span>
+            </span>
+            <span class="font-display text-xl font-bold tracking-wider text-content">
+              ASUR<span class="text-asur-red">WAVE</span>
+            </span>
+          </a>
+
+          <div class="hidden items-center gap-8 md:flex">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#creations" class="nav-link">Creations</a>
+            <a href="#vision" class="nav-link">Vision</a>
+            <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch theme">
+              <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+            <a
+              href="https://www.youtube.com/@AsurWave1012"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-solid clip-slant hover:skew-x-12"
+            >
+              Subscribe
+            </a>
+          </div>
+
+          <div class="flex items-center gap-2 md:hidden">
+            <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch theme">
+              <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+            <button
+              type="button"
+              class="inline-flex items-center justify-center rounded-md p-2 text-muted hover:bg-elevated hover:text-content"
+              data-menu-button
+              aria-label="Toggle navigation menu"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div
+        class="hidden border-b border-asur-red/20 bg-elevated md:hidden"
+        id="mobile-menu"
+        data-menu
+      >
+        <div class="space-y-1 px-2 py-3 sm:px-3">
+          <a href="#home" class="nav-link-mobile">Home</a>
+          <a href="#creations" class="nav-link-mobile">Creations</a>
+          <a href="#vision" class="nav-link-mobile">Vision</a>
+          <a
+            href="https://www.youtube.com/@AsurWave1012"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block px-3 py-2 font-bold text-asur-red"
+          >
+            Subscribe now
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section
+        id="home"
+        class="bg-grid relative flex min-h-screen items-center justify-center overflow-hidden bg-canvas pt-20"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-canvas via-transparent to-canvas/90"
+        ></div>
+        <div
+          class="absolute left-1/4 top-1/4 h-96 w-96 animate-pulse-slow rounded-full bg-asur-red/10 blur-[120px]"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 h-64 w-64 animate-pulse-slow rounded-full bg-asur-cyan/10 blur-[100px]"
+          style="animation-delay: 2s"
+        ></div>
+
+        <div class="relative z-10 mx-auto flex max-w-6xl flex-col items-center px-4 text-center">
+          <p
+            class="mb-6 inline-block animate-float rounded-full border border-asur-red/50 bg-asur-red/5 px-4 py-1 text-xs font-bold uppercase tracking-widest text-asur-red"
+          >
+            <i class="fa-solid fa-bolt mr-2" aria-hidden="true"></i>The Future of AI Entertainment
+          </p>
+
+          <h1
+            class="glitch mb-6 font-display text-5xl font-black leading-tight text-content md:text-8xl"
+            data-text="ASURWAVE"
+          >
+            ASURWAVE
+          </h1>
+
+          <p
+            class="mb-4 bg-gradient-to-r from-content via-content/90 to-muted bg-clip-text font-display text-xl font-bold tracking-wide text-transparent md:text-2xl"
+          >
+            Music. Stories. Cinematic Videos. Experiments.
+          </p>
+
+          <p class="mx-auto mb-10 mt-4 max-w-2xl text-lg font-light leading-relaxed text-muted">
+            Ride the wave of imagination. We combine cutting-edge AI with creative storytelling to
+            bring you the unseen and the unheard.<br />
+            <span class="font-medium text-asur-cyan">Every wave brings something new. 🌊⚡</span>
+          </p>
+
+          <div class="flex flex-col items-center justify-center gap-6 sm:flex-row">
+            <a
+              href="https://www.youtube.com/@AsurWave1012?sub_confirmation=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i> Subscribe for Drops
+            </a>
+            <a href="#creations" class="btn-link">
+              Explore The Wave
+              <i class="fa-solid fa-arrow-down animate-bounce" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content pillars -->
+      <section class="border-y border-line bg-elevated py-12" aria-label="What we create">
+        <div
+          class="reveal mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 text-center md:grid-cols-4"
+        >
+          <div class="pillar group">
+            <div class="mb-2 text-3xl text-asur-red transition-transform group-hover:scale-110">
+              <i class="fa-solid fa-music" aria-hidden="true"></i>
+            </div>
+            <h3 class="mb-1 text-lg font-bold text-content">AI Music</h3>
+            <p class="text-xs uppercase tracking-widest text-subtle">Original Soundscapes</p>
+          </div>
+          <div class="pillar group">
+            <div class="mb-2 text-3xl text-asur-cyan transition-transform group-hover:scale-110">
+              <i class="fa-solid fa-film" aria-hidden="true"></i>
+            </div>
+            <h3 class="mb-1 text-lg font-bold text-content">Cinematics</h3>
+            <p class="text-xs uppercase tracking-widest text-subtle">Visual Storytelling</p>
+          </div>
+          <div class="pillar group">
+            <div class="mb-2 text-3xl text-asur-purple transition-transform group-hover:scale-110">
+              <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+            </div>
+            <h3 class="mb-1 text-lg font-bold text-content">Short Stories</h3>
+            <p class="text-xs uppercase tracking-widest text-subtle">Visual Narrations</p>
+          </div>
+          <div class="pillar group">
+            <div class="mb-2 text-3xl text-yellow-500 transition-transform group-hover:scale-110">
+              <i class="fa-solid fa-flask" aria-hidden="true"></i>
+            </div>
+            <h3 class="mb-1 text-lg font-bold text-content">Experiments</h3>
+            <p class="text-xs uppercase tracking-widest text-subtle">Prompt Challenges</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest creations -->
+      <section id="creations" class="bg-canvas py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-16 flex items-end justify-between">
+            <div>
+              <h2 class="font-display text-3xl font-bold text-content md:text-4xl">
+                Weekly <span class="text-asur-red">Drops</span>
+              </h2>
+              <div class="heading-underline"></div>
+            </div>
+            <a
+              href="https://www.youtube.com/@AsurWave1012/videos"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-link hidden md:inline-flex"
+            >
+              View Channel <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Card 1 -->
+            <article class="creation-card reveal group hover:border-asur-red">
+              <div
+                class="video-facade relative aspect-video overflow-hidden bg-black"
+                data-youtube-id=""
+                data-title="Sonic Landscapes — AI Music Drop"
+                data-channel-url="https://www.youtube.com/@AsurWave1012/videos"
+              >
+                <button
+                  type="button"
+                  class="group/play absolute inset-0 flex h-full w-full items-center justify-center bg-gradient-to-br from-asur-red/20 via-black to-black"
+                  aria-label="Play: Sonic Landscapes — AI Music Drop"
+                >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-asur-red/90 text-2xl text-white shadow-lg transition-transform group-hover/play:scale-110"
+                  >
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="p-6">
+                <p
+                  class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-asur-red"
+                >
+                  <i class="fa-solid fa-music" aria-hidden="true"></i> Original Music
+                </p>
+                <h3
+                  class="mb-2 font-display text-xl font-bold text-content transition-colors group-hover:text-asur-red"
+                >
+                  Sonic Landscapes
+                </h3>
+                <p class="text-sm text-muted">
+                  Experience our latest AI-generated audio track. A fusion of synth and soul.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+              class="creation-card reveal group hover:border-asur-cyan"
+              style="--reveal-delay: 120ms"
+            >
+              <div
+                class="video-facade relative aspect-video overflow-hidden bg-black"
+                data-youtube-id=""
+                data-title="The Narrative — Visual Story"
+                data-channel-url="https://www.youtube.com/@AsurWave1012/videos"
+              >
+                <button
+                  type="button"
+                  class="group/play absolute inset-0 flex h-full w-full items-center justify-center bg-gradient-to-br from-asur-cyan/20 via-black to-black"
+                  aria-label="Play: The Narrative — Visual Story"
+                >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-asur-cyan/90 text-2xl text-black shadow-lg transition-transform group-hover/play:scale-110"
+                  >
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="p-6">
+                <p
+                  class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-asur-cyan"
+                >
+                  <i class="fa-solid fa-film" aria-hidden="true"></i> Visual Story
+                </p>
+                <h3
+                  class="mb-2 font-display text-xl font-bold text-content transition-colors group-hover:text-asur-cyan"
+                >
+                  The Narrative
+                </h3>
+                <p class="text-sm text-muted">
+                  A short story brought to life through AI imagery and narration. Immerse yourself.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+              class="creation-card reveal group hover:border-asur-purple"
+              style="--reveal-delay: 240ms"
+            >
+              <div
+                class="video-facade relative aspect-video overflow-hidden bg-black"
+                data-youtube-id=""
+                data-title="Creative Limits — AI Experiment"
+                data-channel-url="https://www.youtube.com/@AsurWave1012/videos"
+              >
+                <button
+                  type="button"
+                  class="group/play absolute inset-0 flex h-full w-full items-center justify-center bg-gradient-to-br from-asur-purple/20 via-black to-black"
+                  aria-label="Play: Creative Limits — AI Experiment"
+                >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-asur-purple/90 text-2xl text-white shadow-lg transition-transform group-hover/play:scale-110"
+                  >
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="p-6">
+                <p
+                  class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-asur-purple"
+                >
+                  <i class="fa-solid fa-robot" aria-hidden="true"></i> Experiment
+                </p>
+                <h3
+                  class="mb-2 font-display text-xl font-bold text-content transition-colors group-hover:text-asur-purple"
+                >
+                  Creative Limits
+                </h3>
+                <p class="text-sm text-muted">
+                  Testing the boundaries of new AI tools. Prompt challenges and breakdowns.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision / About -->
+      <section id="vision" class="relative overflow-hidden border-t border-line bg-elevated py-24">
+        <div
+          class="absolute -right-20 top-20 h-96 w-96 rounded-full bg-asur-red/5 blur-[100px]"
+        ></div>
+
+        <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+            <div class="reveal order-2 lg:order-1">
+              <div
+                class="group relative aspect-square overflow-hidden rounded-2xl border border-line bg-black"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop"
+                  alt="Abstract neural-network visualization representing AI-generated art"
+                  width="1200"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover opacity-60 transition-opacity duration-700 group-hover:opacity-100"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"
+                ></div>
+                <div class="absolute bottom-6 left-6">
+                  <p class="font-display text-2xl font-bold text-white">Based in India</p>
+                  <p class="text-sm text-asur-red">Creating for the World</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="order-1 lg:order-2">
+              <h2 class="mb-2 text-sm font-bold uppercase tracking-widest text-asur-cyan">
+                <i class="fa-solid fa-wave-square mr-2" aria-hidden="true"></i>About The Channel
+              </h2>
+              <p class="mb-6 font-display text-4xl font-black text-content md:text-6xl">
+                THE FUTURE OF <br /><span class="text-asur-red">AI ENTERTAINMENT</span>
+              </p>
+
+              <p class="mb-8 text-lg leading-relaxed text-muted">
+                Welcome to <span class="font-bold text-content">ASURWAVE</span>. We are not just
+                making content; we are experimenting with the bleeding edge of technology. From
+                generative music to visual storytelling, this is where human creativity meets
+                machine intelligence.
+              </p>
+
+              <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div class="flex items-start gap-3">
+                  <span
+                    class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded bg-asur-red/10 text-asur-red"
+                  >
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <h3 class="font-bold text-content">AI Tool Breakdowns</h3>
+                    <p class="text-sm text-subtle">Learning the tech behind the magic.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span
+                    class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded bg-asur-cyan/10 text-asur-cyan"
+                  >
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <h3 class="font-bold text-content">Viewer Content</h3>
+                    <p class="text-sm text-subtle">Prompt challenges &amp; community ideas.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span
+                    class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded bg-asur-purple/10 text-asur-purple"
+                  >
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <h3 class="font-bold text-content">Original Stories</h3>
+                    <p class="text-sm text-subtle">Short fiction narrated by AI.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span
+                    class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded bg-yellow-500/10 text-yellow-500"
+                  >
+                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <h3 class="font-bold text-content">Cinematic Music</h3>
+                    <p class="text-sm text-subtle">Vibes for the digital age.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="https://www.youtube.com/@AsurWave1012/about"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 border-b border-asur-red pb-1 font-bold text-content transition-colors hover:text-asur-red"
+              >
+                Read Full Story <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to action -->
+      <section
+        class="relative overflow-hidden bg-gradient-to-r from-asur-red to-asur-crimson py-24"
+      >
+        <div class="relative z-10 mx-auto max-w-4xl px-4 text-center">
+          <h2 class="mb-6 font-display text-4xl font-black text-white md:text-6xl">
+            RIDE THE WAVE 🌊✨
+          </h2>
+          <p class="mx-auto mb-10 max-w-2xl text-xl text-white/90">
+            Join a growing community exploring the boundaries of imagination. Weekly drops of music,
+            stories, and experiments.
+          </p>
+          <div class="flex flex-col justify-center gap-4 sm:flex-row">
+            <a
+              href="https://www.youtube.com/@AsurWave1012?sub_confirmation=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-dark"
+            >
+              Subscribe Now
+            </a>
+            <a
+              href="https://www.youtube.com/@AsurWave1012/videos"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-light"
+            >
+              Watch Videos
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-line bg-canvas pb-8 pt-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-4">
+          <!-- Brand -->
+          <div class="md:col-span-2">
+            <div class="mb-4 flex items-center gap-2">
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-full bg-asur-red text-xs font-bold text-white"
+              >
+                AW
+              </span>
+              <span class="font-display text-2xl font-bold text-content">ASURWAVE</span>
+            </div>
+            <p class="mb-4 max-w-sm text-sm text-muted">
+              AI-powered entertainment — music, stories and cinematics. Based in India, creating for
+              the future.
+            </p>
+            <a href="mailto:aashish@marketdoctorsonline.com" class="btn-link">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              aashish@marketdoctorsonline.com
+            </a>
+          </div>
+
+          <!-- Explore -->
+          <nav aria-label="Footer">
+            <h2 class="mb-4 font-display text-sm font-bold uppercase tracking-widest text-content">
+              Explore
+            </h2>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#home" class="text-muted transition-colors hover:text-asur-red">Home</a>
+              </li>
+              <li>
+                <a href="#creations" class="text-muted transition-colors hover:text-asur-red"
+                  >Creations</a
+                >
+              </li>
+              <li>
+                <a href="#vision" class="text-muted transition-colors hover:text-asur-red"
+                  >Vision</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/aashishbharti04/asurwave"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-muted transition-colors hover:text-asur-red"
+                  >Source Code</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Connect -->
+          <div>
+            <h2 class="mb-4 font-display text-sm font-bold uppercase tracking-widest text-content">
+              Connect
+            </h2>
+            <div class="flex gap-3">
+              <a
+                href="https://in.linkedin.com/in/aashana1012"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link hover:bg-[#0077b5]"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://github.com/aashishbharti04"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link hover:bg-zinc-700"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@CodeWithAsur"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link hover:bg-asur-red"
+                aria-label="YouTube"
+              >
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/asurwave1012?igsh=ZDBlY2NtczJ5cmMw"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link hover:bg-pink-600"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-line pt-8 text-xs text-subtle md:flex-row"
+        >
+          <p>&copy; <span data-year>2025</span> AsurWave. All rights reserved.</p>
+          <p class="text-center md:text-right">
+            <i class="fa-solid fa-code mr-1 text-asur-red" aria-hidden="true"></i>
+            Open source for education, learning &amp; community contributions.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
