@@ -33,7 +33,7 @@ jobs:
         env:
           # Serve assets from the project sub-path (e.g. /asurwave/).
           BASE_PATH: /${{ github.event.repository.name }}/
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
         with:
           # Auto-enable Pages (with the GitHub Actions source) on first run.
           enablement: true
